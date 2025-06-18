@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: e8f18f4a902febc4e92f352f72c67dbc
+  - enabled: 1
+    path: Assets/Scenes/MapsSovet.unity
+    guid: 240938330ce7f6647817a16e1a236dca
+  - enabled: 1
+    path: Assets/Scenes/Loading.unity
+    guid: ddd1b4a3ccd26d3489aa21b3435eaa62
+  - enabled: 1
     path: Assets/Scenes/GoldMineSovet.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
