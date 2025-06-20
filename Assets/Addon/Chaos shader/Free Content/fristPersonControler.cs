@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class fristPersonControler : MonoBehaviour
 {
@@ -13,7 +14,11 @@ public class fristPersonControler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (!GetComponent<PhotonView>().IsMine)
+        {
+            g[1].AddComponent<Удалить>();
+            Destroy(this);
+        }
     }
 
     // Update is called once per frame

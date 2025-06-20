@@ -117,7 +117,7 @@ public class CustomObject : MonoBehaviour
 
 
        
-        newobj.LoadObj("res/" + Model.Модели[model] + ".obj");
+        newobj.LoadObj("Ресурсы/" + Model.Модели[model] + ".модель");
         var mesh = new Mesh();
         mesh.name = Model.Модели[model];
         Vector3[] vertices = new Vector3[newobj.VertexList.Count];

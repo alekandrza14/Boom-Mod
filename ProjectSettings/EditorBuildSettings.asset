@@ -17,5 +17,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GoldMineSovet.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/LoadingLad.unity
+    guid: bf7fc937cc54d9d498089300221c49e6
+  - enabled: 1
+    path: Assets/Scenes/LobyLab.unity
+    guid: 93a2f3d1e086c7048916d22481567ec5
+  - enabled: 1
+    path: Assets/Scenes/SovetLab.unity
+    guid: 8d1a4b0d470da2249be7588af18e006c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
