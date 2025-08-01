@@ -24,15 +24,24 @@ public class DirecroryFindButtons : MonoBehaviour
             item.AddComponent<Удалить>();
         }
         list.Clear();
+        GameObject[] charactors = Resources.LoadAll<GameObject>("Charatros");
+        foreach (GameObject file in charactors)
+        {
+            list.Add(Instantiate(CO, panel));
+            list[list.Count - 1].GetComponent<ButtonSpawn>().spawnText.text = file.name;
+            list[list.Count - 1].GetComponent<ButtonSpawn>().spawnPrefab = file;
+
+
+        }
         foreach (FileInfo file in tag)
         {
             list.Add(Instantiate(CO, panel));
-            list[list.Count - 1].GetComponent<ButtonSpawn>().spawnText.text = file.Name.Replace(".объект","");
+            list[list.Count - 1].GetComponent<ButtonSpawn>().spawnText.text = file.Name.Replace(".объект", "");
             if (file.Name.Contains(".модель"))
             {
                 list[list.Count - 1].gameObject.SetActive(false);
                 list[list.Count - 1].gameObject.transform.parent = new GameObject("Дам").transform;
             }
-            }
         }
+    }
 }
