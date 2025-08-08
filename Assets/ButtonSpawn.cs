@@ -1,7 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
+using Photon.Realtime;
 
-public class ButtonSpawn : MonoBehaviour
+public class ButtonSpawn : MonoBehaviourPun
 {
     public GameObject spawnPrefab;
     public Text spawnText;
@@ -12,6 +14,8 @@ public class ButtonSpawn : MonoBehaviour
     {
         SpawnPoint = FindAnyObjectByType<fristPersonControler>().gameObject;
     }
+
+    
     public void Spawn()
     {
         if (FromEditor == null)
@@ -20,9 +24,20 @@ public class ButtonSpawn : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(r, out hit))
             {
-                CustomObject obj = Instantiate(spawnPrefab, hit.point, SpawnPoint.transform.rotation).GetComponent<CustomObject>();
-                obj.s = spawnText.text;
-
+                if (!PhotonNetwork.IsConnected)
+                {
+                    CustomObject obj = Instantiate(spawnPrefab, hit.point, SpawnPoint.transform.rotation).GetComponent<CustomObject>();
+                    obj.s = spawnText.text;
+                }
+                if (PhotonNetwork.IsConnected)
+                {
+                    
+                        GameObject g = Resources.Load<GameObject>(spawnPrefab.name);
+                        CustomObject obj = PhotonNetwork.Instantiate(g.name, hit.point, SpawnPoint.transform.rotation).GetComponent<CustomObject>();
+                    obj.GetComponent<PhotonView>().RPC("ChangeObject", RpcTarget.All, spawnText.text);
+                     //  obj.s = spawnText.text;
+                   
+                }
             }
         }
         if (FromEditor != null)
@@ -31,7 +46,17 @@ public class ButtonSpawn : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(r, out hit))
             {
-                Instantiate(FromEditor, hit.point, SpawnPoint.transform.rotation);
+                if (!PhotonNetwork.IsConnected)
+                {
+                    Instantiate(FromEditor, hit.point, SpawnPoint.transform.rotation);
+                }
+                if (PhotonNetwork.IsConnected)
+                {
+                   
+                        GameObject g = Resources.Load<GameObject>(FromEditor.name);
+                        PhotonNetwork.Instantiate(g.name, hit.point, SpawnPoint.transform.rotation);
+                   
+                }
 
             }
         }

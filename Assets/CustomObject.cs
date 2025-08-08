@@ -4,6 +4,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using Photon.Pun;
+using Photon.Realtime;
 using UnityEngine.Device;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
@@ -39,7 +41,7 @@ public class CustomObjectData
 
 }
 
-public class CustomObject : MonoBehaviour
+public class CustomObject : MonoBehaviourPun
 {
     
     public MeshFilter mf;
@@ -56,7 +58,11 @@ public class CustomObject : MonoBehaviour
     bool interact;
    
     List<RawImage> test;
-  
+    [PunRPC]
+    void ChangeObject(string a)
+    {
+        s = a;
+    }
     // Start is called before the first frame update
     void Start()
     {
