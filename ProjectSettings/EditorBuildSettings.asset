@@ -26,5 +26,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SovetLab.unity
     guid: 8d1a4b0d470da2249be7588af18e006c
+  - enabled: 1
+    path: "Assets/Scenes/\u041E\u0442\u0440\u0430\u0431\u043E\u0442\u043A\u0430.unity"
+    guid: 2b09f045a81a1004e9fcc402a4b0ef0a
+  - enabled: 1
+    path: Assets/Scenes/Scins.unity
+    guid: efb269ed1a6d9154d851a77375519400
+  - enabled: 1
+    path: Assets/Scenes/LoadingSSS.unity
+    guid: 8d583984d9e7b7b45aa8c694afd286a9
+  - enabled: 1
+    path: Assets/Scenes/SovetSpcaeStantion.unity
+    guid: 267b3457917e31c4e9df6f721aa0f034
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
