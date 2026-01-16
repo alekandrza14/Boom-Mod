@@ -27,6 +27,20 @@ public class SkinManager : MonoBehaviourPun
             skins[1].SetActive(false);
             skins[2].SetActive(false);
         }
+        if (VarSave.GetString("Skin") == "2D[1]")
+        {
+            skins[0].SetActive(false);
+            skins[1].SetActive(false);
+            skins[2].SetActive(false);
+            skins[3].SetActive(true);
+        }
+        if (VarSave.GetString("Skin") == "2D[2]")
+        {
+            skins[0].SetActive(false);
+            skins[1].SetActive(false);
+            skins[2].SetActive(false);
+            skins[4].SetActive(true);
+        }
         else if (VarSave.GetString("Skin") == "3D")
         {
 
@@ -52,21 +66,27 @@ public class SkinManager : MonoBehaviourPun
             if (VarSave.GetString("Skin") == "" || VarSave.GetString("Skin") == "2D")
             {
                 skins[0].SetActive(true);
-                skins[1].SetActive(false);
-                skins[2].SetActive(false);
+            }
+            if (VarSave.GetString("Skin") == "" || VarSave.GetString("Skin") == "2D[1]")
+            {
+                skins[0].SetActive(false);
+                skins[3].SetActive(true);
+            }
+            if (VarSave.GetString("Skin") == "2D[2]")
+            {
+                skins[0].SetActive(false);
+                skins[4].SetActive(true);
             }
             else if (VarSave.GetString("Skin") == "3D")
             {
 
                 skins[0].SetActive(false);
                 skins[1].SetActive(true);
-                skins[2].SetActive(false);
             }
             else if (VarSave.GetString("Skin") == "3Di")
             {
 
                 skins[0].SetActive(false);
-                skins[1].SetActive(false);
                 skins[2].SetActive(true);
             }
         }
