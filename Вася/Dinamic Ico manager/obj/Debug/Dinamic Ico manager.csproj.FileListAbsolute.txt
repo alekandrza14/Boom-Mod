@@ -1,0 +1,13 @@
+F:\Boom Mod\Вася\Dinamic Ico manager\bin\Debug\Dinamic Ico manager.exe.config
+F:\Boom Mod\Вася\Dinamic Ico manager\bin\Debug\Dinamic Ico manager.exe
+F:\Boom Mod\Вася\Dinamic Ico manager\bin\Debug\Dinamic Ico manager.pdb
+F:\Boom Mod\Вася\Dinamic Ico manager\bin\Debug\Microsoft.WindowsAPICodePack.dll
+F:\Boom Mod\Вася\Dinamic Ico manager\bin\Debug\Microsoft.WindowsAPICodePack.Shell.dll
+F:\Boom Mod\Вася\Dinamic Ico manager\obj\Debug\Dinamic Ico manager.csproj.AssemblyReference.cache
+F:\Boom Mod\Вася\Dinamic Ico manager\obj\Debug\Dinamic_Ico_manager.Form1.resources
+F:\Boom Mod\Вася\Dinamic Ico manager\obj\Debug\Dinamic_Ico_manager.Properties.Resources.resources
+F:\Boom Mod\Вася\Dinamic Ico manager\obj\Debug\Dinamic Ico manager.csproj.GenerateResource.cache
+F:\Boom Mod\Вася\Dinamic Ico manager\obj\Debug\Dinamic Ico manager.csproj.CoreCompileInputs.cache
+F:\Boom Mod\Вася\Dinamic Ico manager\obj\Debug\Dinamic Ico manager.csproj.CopyComplete
+F:\Boom Mod\Вася\Dinamic Ico manager\obj\Debug\Dinamic Ico manager.exe
+F:\Boom Mod\Вася\Dinamic Ico manager\obj\Debug\Dinamic Ico manager.pdb

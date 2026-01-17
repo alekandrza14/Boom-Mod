@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: Unauticna Comunity Entertamed
-  productName: "\u0412\u0430\u0441\u044F \u041C\u043E\u0434"
+  productName: "Launcher \u0412\u0430\u0441\u044F \u041C\u043E\u0434"
   defaultCursor: {fileID: 2800000, guid: f539ee8b014e6d34292b9fb2ac167f65, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 1, g: 0, b: 0.047468662, a: 1}
@@ -39,7 +39,9 @@ PlayerSettings:
     y: 0
     width: 1
     height: 1
-  m_SplashScreenLogos: []
+  m_SplashScreenLogos:
+  - logo: {fileID: 21300000, guid: dd17589878add074f91109d950181d46, type: 3}
+    duration: 2
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1920
@@ -290,7 +292,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 7393a2e6ae4ea0d4a9f092dde7089894, type: 3}
+      m_Icon: {fileID: 2800000, guid: 9890065ee28a7b844b442522dd5209bb, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

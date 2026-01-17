@@ -10,7 +10,7 @@ public class RandomActive : MonoBehaviour
         
         // int i = Random.Range(0, rand.Length);
         // rand[i].SetActive(true);
-        int i = VarSave.LoadInt("antirand", 1) % rand.Length;
+        int i = VarSave.LoadInt("antirand"+name, 1) % rand.Length;
         newo = rand[i];
         newo.SetActive(true);
         foreach (GameObject oldo in rand)
@@ -24,7 +24,7 @@ public class RandomActive : MonoBehaviour
 
         // int i = Random.Range(0, rand.Length);
         // rand[i].SetActive(true);
-        int i = VarSave.LoadInt("antirand", 1) % rand.Length;
+        int i = VarSave.LoadInt("antirand" + name, 1) % rand.Length;
         newo = rand[i];
         newo.SetActive(true);
         foreach (GameObject oldo in rand)
@@ -37,7 +37,7 @@ public class RandomActive : MonoBehaviour
     {
         // int i = Random.Range(0, rand.Length);
         // rand[i].SetActive(true);
-        int i = VarSave.LoadInt("antirand", -1) % rand.Length;
+        int i = VarSave.LoadInt("antirand" + name, -1) % rand.Length;
         newo = rand[i];
         newo.SetActive(true);
         foreach (GameObject oldo in rand)
